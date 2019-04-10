@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,6 +9,7 @@ namespace BigSchool.Models
     public class Course
     {
         public int Id { get; set; }
+        public bool IsCanceled { get; set; }
         public ApplicationUser Lecturer { get; set; }
         [Required]
         public string LecturerId { get; set; }
